@@ -266,5 +266,8 @@ footer span a:hover {
     -ms-grid-column-span: 4;
     grid-column: 1/5;
   }
+  .portafolio .contenedor .galeria-port .imagen-port {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
