@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+h1 {
+  font-size: 3.75em;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-size: 2.625em;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-size: 1.56em;
+  font-family: 'Ubuntu', sans-serif;
+  background: #1e1e6e;
+  background: -webkit-gradient(linear, left top, right top, from(#1e1e6e), color-stop(72%, #191783), to(#0b0753));
+  background: linear-gradient(90deg, #1e1e6e 0%, #191783 72%, #0b0753 100%);
+}
+
+main p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+section {
+  padding: 1rem;
+}
+
+footer {
+  background: #111;
+  padding: 1rem 1.43rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+.navMain .navMenu li a:hover {
+  text-decoration: underline;
+  color: #00587A;
+  letter-spacing: 1px;
+}
+
+.sectionUno {
+  background-color: #ecece9;
+}
+
+.sectionDos {
+  background-color: #008891;
+}
+
+.sectionTres {
+  background-color: #00587A;
+}
+
+/* Seccion home */
+.me {
+  padding: 60px 0px 60px 30px;
+}
+
+.home p {
+  padding: 15px;
+}
+
+.home img {
+  width: 70%;
+}
+
+.servicios {
+  text-align: center;
+}
+
+/* Seccion Proyectos */
+.portafolio {
+  background: #ecece9;
+}
+
+.portafolio .contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.portafolio .contenedor .titulo {
+  color: #0f2f57;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portafolio .contenedor .galeria-port {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portafolio .contenedor .galeria-port .imagen-port {
+  width: 44%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.portafolio .contenedor .galeria-port .imagen-port .hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: rgba(15, 47, 87, 0.6);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portafolio .contenedor .galeria-port .imagen-port .hover-galeria img {
+  width: 50px;
+}
+
+.portafolio .contenedor .galeria-port .imagen-port .hover-galeria p {
+  color: #fff;
+}
+
+.portafolio .contenedor .galeria-port .imagen-port:hover .hover-galeria {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portafolio .contenedor .galeria-port .imagen-port:hover .hover-galeria {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portafolio .contenedor .galeria-port .imagen-port > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* seccion habilidades  */
+.center {
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.center .padreHabilidades {
+  width: 80%;
+  height: 90%;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.center .padreHabilidades .cajaHabilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 2px;
+  padding: 2px;
+}
+
+.center .padreHabilidades .titulo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.center .padreHabilidades .parrafo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.center .padreHabilidades .border {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.center .padreHabilidades .border img {
+  width: 150px;
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+  .home {
+    display: block;
+  }
+  .srv {
+    gap: 1rem;
+  }
+}
+
+/* MediasQuery */
+@media only screen and (max-width: 768px) {
+  nav {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .cajaHabilidades {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

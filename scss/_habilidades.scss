@@ -1,0 +1,35 @@
+/* seccion habilidades  */
+.center{
+    justify-items: center;
+    display: grid;
+    .padreHabilidades{
+        width: 80%;
+        height: 90%;
+        margin-top: 10px;
+        display: grid;
+        gap: 1rem;
+        .cajaHabilidades{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            transition: all 0.3s ease;
+            margin: 2px;
+            padding: 2px;
+        }
+        .titulo{
+            grid-column: 1/5;
+        }
+        .parrafo{
+            grid-column: 1/5;
+        }
+        .border{
+            border: 1px solid black;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .border img{
+            width: 150px;
+        }
+    }
+}

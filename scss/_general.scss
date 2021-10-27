@@ -1,0 +1,73 @@
+$titulo1: 3.75em;
+$font1: 'Ubuntu', sans-serif;
+$font2: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+@mixin titulo ($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $font1;
+}
+
+h1{
+    @include titulo ($titulo1, 700);
+}
+h2{
+    @include titulo ($titulo1 * 0.7, 600);
+}
+a{
+    text-decoration: none;
+}
+nav{
+    font-size: 1.56em;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(30,30,110);
+    background: linear-gradient(90deg, rgba(30,30,110,1) -0%, rgba(25,23,131,1) 72%, rgba(11,7,83,1) 100%);  
+
+} 
+main p{
+    font-family: $font2;
+    font-size: 22px;
+}
+section{
+    padding: 1rem;
+}
+
+// footer
+
+footer{
+    background: #111;
+    padding: 1rem 1.43rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    span a{
+        color: crimson;
+        text-decoration: none;
+    }
+    span a:hover {
+        text-decoration: underline;
+    }
+}
+.navMain .navMenu li a:hover {
+    text-decoration: underline;
+    color: #00587A;
+    letter-spacing: 1px;
+}
+
+.sectionUno{
+    background-color:  #ecece9;
+}
+.sectionDos{
+    background-color: #008891 ;
+}
+.sectionTres{
+    background-color: #00587A ;
+}
